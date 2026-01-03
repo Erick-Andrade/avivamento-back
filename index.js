@@ -44,8 +44,8 @@ async function inicializar() {
     const database = await conectarDB();
     
     // Carregar classes
-    const InscricaoRepository = require('./repositories/InscricaoRepository');
-    const InscricaoController = require('./controllers/InscricaoController');
+    const InscricaoRepository = require('./src/repositories/InscricaoRepository');
+    const InscricaoController = require('./src/controllers/InscricaoController');
     
     // Criar instâncias
     const inscricaoRepository = new InscricaoRepository(database);
